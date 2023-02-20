@@ -1,0 +1,46 @@
+html {
+    font-family: "Impact";
+    background: CornflowerBlue;
+    padding: 5rem;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Impact";
+    margin: 1rem 0;
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav {
+    background: rgb(228, 207, 15);
+    padding: 0 0.5rem;
+    border-radius: 25px;
+}
+
+nav ul  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.3rem;
+}
+
+.content {
+    padding: 0 1rem 1rem;
+    background: rgb(228, 207, 15);
+    border-radius: 25px;
+}

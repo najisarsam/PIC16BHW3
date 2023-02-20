@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <h1>Submit A Message!</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+      <label for="message">Please type a short message: </label>
+      <input type="text" name="message" id="message">
+      <br>
+      <br>
+      <label for="handle">Please type your name or alias: </label>
+      <input type="text" name="alias" id="alias">
+      <br>
+      <br>
+      <input type="submit" value="Click to submit your message into the bank for eternity!">
+  </form>
+  
+  {% if submitted %}
+    <br>
+    <p>Thanks for the message!</p>
+  {% endif %}
+
+{% endblock %}

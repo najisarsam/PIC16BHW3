@@ -1,0 +1,17 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>MESSAGE BANK</title>
+<nav>
+  <h1>MESSAGE BANK</h1>
+  <ul>
+    <li><a href="/">Submit A Message!</a></li>
+    <li><a href="/view/">View Some Messages!</a></li>
+  </ul>
+</nav>
+
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+</section>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <h1>Please Enjoy Reading 3 Randomly Selected Messages From The Bank!</h1>
+  <p>(Refresh to switch up which ones you see!)</p>
+  {% endblock %}
+
+{% block content %}
+    {% for message in randomlist %}
+        <p>
+            This is the bank's message #{{message[0]}}:
+            &emsp; "{{message[1]}}" <br>
+            &emsp; by <em>{{message[2]}}</em>
+        </p>
+    {% endfor %}
+{% endblock %}
